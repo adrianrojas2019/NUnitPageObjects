@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="PageObjectsSample\" />
+    <Folder Include="Version1\Pages\CheckoutPage\" />
   </ItemGroup>
 
 </Project>

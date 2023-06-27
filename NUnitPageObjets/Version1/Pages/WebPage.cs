@@ -36,13 +36,13 @@ namespace NUnitPageObjets.Version1
             return WebDriverWait.Until(ExpectedConditions.ElementExists(locator));
         }
 
-        private void WaitForAjax()
+        protected void WaitForAjax()
         {
             var js = (IJavaScriptExecutor)Driver;
             WebDriverWait.Until(wd => js.ExecuteScript("return jQuery.active").Equals("0"));
         }
 
-        private void WaitUntilPageLoadsCompletely()
+        protected void WaitUntilPageLoadsCompletely()
         {
             var js = (IJavaScriptExecutor)Driver;
             WebDriverWait.Until(wd => js.ExecuteScript("return document.readyState").Equals("complete"));

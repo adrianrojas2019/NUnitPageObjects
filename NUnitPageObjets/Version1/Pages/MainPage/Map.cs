@@ -20,7 +20,7 @@ namespace NUnitPageObjets.Version1.Main
         //    }
         //}
 
-{        public IWebElement viewCartButton => WaitAndFindElement(By.CssSelector("[class*='added_to_cart wc-forward']"));
+        public IWebElement viewCartButton => WaitAndFindElement(By.CssSelector("[class*='added_to_cart wc-forward']"));
 
         public IWebElement GetProductBoxByName(string name)
         {

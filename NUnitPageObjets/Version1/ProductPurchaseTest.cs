@@ -12,8 +12,8 @@ namespace NUnitPageObjets.Version1
 {
     public class ProductPurchaseTests : IDisposable
     {
-        private static IWebDriver _driver;
-        private static MainPage _mainPage;
+        private static IWebDriver? _driver;
+        private static readonly MainPage? _mainPage;
 
         public ProductPurchaseTests()
         {
